@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin-Tracker</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/free-vector/isolated-digital-currency-symbol-indian-rupee-golden-coin_1017-41272.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+ </head>
+ <body>
+
+    <section class="header container">
+        <div class="nav">
+            <input type="text" name="search" id="search_bar" placeholder="Search By Name or Symbol">
+            <div class="btn">
+                <button onclick="MarketCap()">Sort By Mkt Cap</button>
+                <button onclick="Percentage()">Sort By Percentage</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="table container2">
+        <table class="table-main">
+            <tbody class="table_body">
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Bitcoin</div>
+                        </div>
+                    </td>
+                    <td>BTC</td>
+                    <td>67281</td>
+                    <td>20359224425</td>
+                    <td class="Percentage_change" style="color: green;">18.60%</td>
+                    <td>Mkt Cap: 1325196501435</td>
+                </tr>
+
+                 <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Tether</div>
+                        </div>
+                    </td>
+                    <td>USDT</td>
+                    <td>1.001</td>
+                    <td>22695227836</td>
+                    <td class="Percentage_change" style="color: green;">10.00%</td>
+                    <td>Mkt Cap: 111485424269</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">BNB</div>
+                        </div>
+                    </td>
+                    <td>BNB</td>
+                    <td>574.47</td>
+                    <td>602573955</td>
+                    <td class="Percentage_change" style="color: red;">-4.53%</td>
+                    <td>Mkt Cap: 88372470715</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/4128/large/solana.png?1696504756" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Solana</div>
+                        </div>
+                    </td>
+                    <td>SOL</td>
+                    <td>178.73</td>
+                    <td>2802767125</td>
+                    <td class="Percentage_change" style="color: green;">7.25%</td>
+                    <td>Mkt Cap: 80161561019</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/13442/large/steth_logo.png?1696513206" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Lido Staked Ether</div>
+                        </div>
+                    </td>
+                    <td>STETH</td>
+                    <td>3108.34</td>
+                    <td>104742071</td>
+                    <td class="Percentage_change" style="color: green;">18.31%</td>
+                    <td>Mkt Cap: 28962800586</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">XRP</div>
+                        </div>
+                    </td>
+                    <td>XRP</td>
+                    <td>0.512936</td>
+                    <td>629964741</td>
+                    <td class="Percentage_change" style="color: red;">-1.00%</td>
+                    <td>Mkt Cap: 1325196501435</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/5/large/dogecoin.png?1696501409" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Dogecoin</div>
+                        </div>
+                    </td>
+                    <td>DOGE</td>
+                    <td>0.152357</td>
+                    <td>703166433</td>
+                    <td class="Percentage_change" style="color: green;">0.00%</td>
+                    <td>Mkt Cap: 22000280970</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/17980/large/ton_symbol.png?1696517498" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Toncoin</div>
+                        </div>
+                    </td>
+                    <td>TON</td>
+                    <td>6.39</td>
+                    <td>205065032</td>
+                    <td class="Percentage_change" style="color: red;">-0.05%</td>
+                    <td>Mkt Cap: 22212593708</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">Ethereum</div>
+                        </div>
+                    </td>
+                    <td>ETH</td>
+                    <td>3109.23</td>
+                    <td>9770491512</td>
+                    <td class="Percentage_change" style="color: green;">18.60%</td>
+                    <td>Mkt Cap: 373548988652</td>
+                </tr>
+
+              <tr>
+                    <td>
+                        <div class="coin-img">
+                        <img src="https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694" alt style="width: 45px; height: 45px;">
+                        <div class="coin-name">USDC</div>
+                        </div>
+                    </td>
+                    <td>USDC</td>
+                    <td>2</td>
+                    <td>3890571364</td>
+                    <td class="Percentage_change" style="color: red;">-1.5%</td>
+                    <td>Mkt Cap: 33386687613</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+    
+ </body>
+ </html>
